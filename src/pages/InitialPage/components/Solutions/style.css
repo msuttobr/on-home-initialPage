@@ -1,0 +1,38 @@
+.solutions--container {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 20px;
+}
+.solutions--header {
+    padding: 50px 0 150px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.solutions--header > img {
+    max-width: 650px;
+    width: 100%;
+}
+.solutions--title {
+    font-size: 2em;
+    background: linear-gradient(to right, hsl(180, 100%, 50%), hsl(300, 100%, 50%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+    text-align: left;
+}
+.solutions--cards {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .solutions--cards {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+}

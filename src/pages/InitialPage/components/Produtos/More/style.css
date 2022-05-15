@@ -1,0 +1,17 @@
+.products .content {
+   padding: 0 20px;
+}
+.products .border-gradient {
+    padding: 0 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 14px;
+    border-color: transparent;
+    background: linear-gradient(90deg, #001d3c, #0F0B30) padding-box,
+                linear-gradient(to right, hsl(180, 100%, 50%), hsl(300, 100%, 50%)) border-box;
+ }
+
+ .products .button--gradient{
+    background: linear-gradient(90deg, #001d3c, #001d3c) padding-box,
+    linear-gradient(to right, hsl(180, 100%, 50%), hsl(300, 100%, 50%)) border-box;
+ }

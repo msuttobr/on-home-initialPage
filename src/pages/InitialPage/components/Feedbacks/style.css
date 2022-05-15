@@ -1,0 +1,14 @@
+.feedback--background {
+    padding: 0 0 100px 0;
+}
+.feedback--cards {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .feedback--cards {
+        flex-direction: column;
+    }
+}

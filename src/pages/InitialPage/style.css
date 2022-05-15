@@ -1,0 +1,58 @@
+.rl-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.div--mainBox {
+    background-color: #0F0B30;
+}
+.div--mainGradient {
+    background: linear-gradient(5deg, rgba(15,11,48,1) 16%, rgba(23,0,82,0.913624824929972) 39%, rgba(41,7,106,1) 58%, rgba(118,0,150,0.7679665616246498) 100%);
+}
+.rl-about {
+    padding-top: 100px;
+}
+.rl-about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.rl-about-content .rl-subtitle {
+    font-size: 45px;
+    color: white;
+    font-weight: lighter;
+}
+.rl-about-content .rl-about-title {
+    font-size: 5em;
+    color: #7879F1;
+    font-weight: bolder;
+}
+.rl-about-content .rl-about-onhome {
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+    max-width: 500px;
+}
+.solutions {
+    background-color: #0F0B30;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feedbacks {
+    background-color: #0F0B30;
+}
+.contact {
+    background-color: #0F0B30;
+}
+@media only screen and (max-width: 600px) {
+    .rl-about-content .rl-subtitle {
+        font-size: 2em;
+    }
+    .rl-about-content .rl-about-title {
+        font-size: 3em;
+    }
+}
