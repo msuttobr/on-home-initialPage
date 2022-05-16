@@ -45,14 +45,17 @@
 .feedbacks {
     background-color: #0F0B30;
 }
+.feedbacks > .rl-container {
+    max-width: 800px;
+}
 .contact {
     background-color: #0F0B30;
 }
 @media only screen and (max-width: 600px) {
     .rl-about-content .rl-subtitle {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     .rl-about-content .rl-about-title {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 }

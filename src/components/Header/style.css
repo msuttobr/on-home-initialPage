@@ -19,17 +19,19 @@ ul {
     font-weight: bolder;
     cursor: pointer;
 }
-
 .rl-header ul {
     display: flex;
+    align-items: center;
     gap: 20px;
     cursor: pointer;
 }
-
 .rl-header ul > li:hover {
     font-weight: bolder;
 }
-
+.rl-options {
+    display: flex;
+    gap: 20px;
+}
 .rl-login { 
     display: flex;
     align-items: center;
@@ -44,7 +46,6 @@ ul {
     border-radius: 20px;
     padding: 5px 7px;
 }
-
 .rl-login button {
     color: white;
     background-color: transparent;
@@ -52,9 +53,53 @@ ul {
     font-size: 15px;
     cursor: pointer;
 }
-
-@media only screen and (max-width: 600px) {
+.rl-navigation {
+    position: fixed;
+    left: -100vw;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: transparent;
+    backdrop-filter: none;
+    color: white;
+    overflow-y: auto;
+    transition: left 200ms;
+}
+.rl-navigation .rl-navigation-container {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 0;
+    padding: 0 0 60px 0;
+    min-height: 100%;
+}
+.rl-navigation-menu-close {
+    position: absolute;
+    top: 0;
+    left: 80vw;
+    width: 20vw;
+    height: 100vh;
+    opacity: 1;
+    background: hsla(0, 0%, 0%, 0.2);
+    display: block;
+    transition: opacity 200ms;
+}
+#checkbox-menu:checked ~ .rl-transparent {
+    top: 0;
+    left: 0vw;
+}
+.rl-navigation-login {
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (max-width: 800px) {
+    .menu-hamburguer {
+        display: block;
+    }
     .rl-header {
-        display: none;
+        justify-content: initial;
+        gap: 20px;
     }
 }

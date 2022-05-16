@@ -26,25 +26,25 @@ const InitialPage = () => {
                     </div>
                 </div>
             </div>
-                <section className="solutions">
-                    <div className="rl-container">
-                        <Solutions />
-                    </div>
-                </section>
-                <Produtos />
-                <section className='feedbacks'>
-                    <div className="rl-container">
-                        <Feedbacks />
-                    </div>
-                </section>
-                <section className='contact'>
-                    <div className="rl-container">
-                        <ContactUs />
-                    </div>
-                </section>
-                <section className='footer'>
-                    <Footer />
-                </section>
+            <section className="solutions">
+                <div className="rl-container">
+                    <Solutions />
+                </div>
+            </section>
+            <Produtos />
+            <section className='feedbacks'>
+                <div className="rl-container">
+                    <Feedbacks />
+                </div>
+            </section>
+            <section className='contact'>
+                <div className="rl-container">
+                    <ContactUs />
+                </div>
+            </section>
+            <section className='footer'>
+                <Footer />
+            </section>
         </div>
     )
 }
