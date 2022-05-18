@@ -2,11 +2,11 @@ import React from 'react'
 
 import './style.css';
 
-const MenuHamburguer = () => {
+const MenuHamburguerAberto = () => {
     return (
         <>
             <input type="checkbox" id="checkbox-menu" />
-            <label className='close' for="checkbox-menu">
+            <label className='open' for="checkbox-menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -15,4 +15,4 @@ const MenuHamburguer = () => {
     )
 }
 
-export default MenuHamburguer
+export default MenuHamburguerAberto

@@ -2,14 +2,14 @@
     position: absolute;
     opacity: 0;
 }
-label {
+label.close {
+    display: none;
     cursor: pointer;
     position: relative;
-    display: block;
     height: 22px;
     width: 30px;
 }
-label span {
+label.close span {
     position: absolute;
     display: block;
     height: 5px;
@@ -18,13 +18,13 @@ label span {
     background: hsl(0, 100%, 100%);
     transition: 0.25s ease-in-out;
 }
-label span:nth-child(1) {
+label.close span:nth-child(1) {
     top: 0;
 }
-label span:nth-child(2) {
+label.close span:nth-child(2) {
     top: 8px;
 }
-label span:nth-child(3) {
+label.close span:nth-child(3) {
     top: 16px;
 }
 #checkbox-menu:checked+label span:nth-child(1) {
@@ -37,4 +37,18 @@ label span:nth-child(3) {
 #checkbox-menu:checked+label span:nth-child(3) {
     transform: rotate(45deg);
     top: 8px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    label.close {
+        display: block;
+    }
+    .menu-hamburguer {
+        display: block;
+    }
+    .rl-header {
+        justify-content: initial;
+        gap: 20px;
+    }
 }
