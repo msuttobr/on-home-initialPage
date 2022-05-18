@@ -80,7 +80,7 @@ ul {
     color: white;
     text-decoration: none;
 }
-.rl-navigation .rl-navigation-container > *:hover {
+.rl-navigation .rl-navigation-container > *:not(.open):hover {
     color: black;
     background-color: white;
 }

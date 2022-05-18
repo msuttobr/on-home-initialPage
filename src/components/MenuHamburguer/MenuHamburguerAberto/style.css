@@ -4,6 +4,7 @@ label.open {
     display: block;
     height: 22px;
     width: 30px;
+    margin-bottom: 8px;
 }
 label.open span {
     position: absolute;
